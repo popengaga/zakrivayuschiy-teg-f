@@ -7,7 +7,9 @@
 
 html.theme-light {
   --background-color:#FFF ;
-  --background-image:url(../images/background_light.png) ;
+  --background-image-first-color: #d3d3d3;
+  --background-image-second-color:#e7e7e7 ;
+  --background-image-third-color:#1a1a1a;
   --main-color: #000;
   --wgth-title: 700;
   --wgth-text: 400;
@@ -16,7 +18,9 @@ html.theme-light {
 
 html.theme-dark {
   --background-color:#000 ;
-  --background-image:url(../images/background_light.png) ;
+  --background-image-first-color: #000;
+  --background-image-second-color: #007f0c;
+  --background-image-third-color:#1a1a1a;
   --main-color: #00CC14;
   --wgth-title: 785;
   --wgth-text: 465;
@@ -25,7 +29,9 @@ html.theme-dark {
 @media (prefers-color-scheme: light) {
   :root {
     --background-color:#FFF ;
-    --background-image:url(../images/background_light.png) ;
+    --background-image-first-color:#d3d3d3;
+    --background-image-second-color: #e7e7e7;
+    --background-image-third-color:#004306;
     --main-color: #000;
     --wgth-title: 700;
     --wgth-text: 400;
@@ -35,7 +41,9 @@ html.theme-dark {
 @media (prefers-color-scheme: dark) {
   :root {
     --background-color:#000 ;
-    --background-image:url(../images/background_light.png) ;
+    --background-image-first-color: #000;
+    --background-image-second-color: #007f0c;
+    --background-image-third-color:#004306;
     --main-color: #00CC14;
     --wgth-title: 785;
     --wgth-text: 465;
