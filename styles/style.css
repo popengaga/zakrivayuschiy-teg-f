@@ -175,9 +175,15 @@
 .section__card-image {
   display: block;
   width: 100%;
-  height: 100%;
+  height: 696px;
   object-fit: cover;
   object-position: center;
+}
+
+@media (width <= 375px) {
+  .section__card-image {
+    height: 371px;
+  }
 }
 
 .section__card-lable {
