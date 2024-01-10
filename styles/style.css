@@ -49,7 +49,6 @@
   margin-top: 102px;
   margin-bottom: 107px;
   text-transform: uppercase;
-  font-variation-settings: "wght" 400 ;
 
 }
 
@@ -92,7 +91,6 @@
   background-color: transparent;
   transition: opacity 0.3s ease;
   cursor: pointer;
-  font-variation-settings: "wght" 400;
 
 }
 
@@ -196,6 +194,14 @@
 
 }
 
+@supports (text-stroke: 1px var(--label-color)) or (-webkit-text-stroke: 1px var(--label-color)) {
+  .section__card-lable {
+    text-shadow: none;
+    -webkit-text-stroke: 1px var(--label-color);
+    text-stroke: 1px var(--label-color);
+  }
+}
+
 .section__discription-list {
   display: flex;
   flex-direction: column;
@@ -243,9 +249,11 @@
 }
 
 .button__text {
+  color: var(--mix-blend-color);
   font-family: "PressStart2P";
   font-size: 14px;
   line-height: 90%;
+  mix-blend-mode: difference;
 }
 
 .card__like-button {
@@ -287,11 +295,6 @@
 
 .card__like-button:focus-visible {
   box-shadow: 2px 2px 0px 0px var(--main-color);
-}
-
-.button__text {
-  color: var(--mix-blend-color);
-  mix-blend-mode: difference;
 }
 
 .like-icon {
