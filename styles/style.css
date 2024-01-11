@@ -270,7 +270,7 @@
   mix-blend-mode: difference;
 }
 
-.card__like-button {
+.button {
   position: relative;
   display: flex;
   flex-direction: row;
@@ -286,7 +286,7 @@
   cursor: pointer;
 }
 
-.card__like-button::before {
+.button::before {
   content: "";
   position: absolute;
   top: 0;
@@ -296,18 +296,18 @@
   height: 100%;
   background: var(--main-color);
   transition: transform 0.5s ease-in-out;
-  transform: translateX(-100%);
+  transform: translateX(-110%);
 }
 
-.card__like-button:hover::before {
+.button:hover::before {
   transform: translateX(0);
 }
 
-.card__like-button:focus {
+.button:focus {
   outline: none;
 }
 
-.card__like-button:focus-visible {
+.button:focus-visible {
   box-shadow: 2px 2px 0px 0px var(--main-color);
 }
 
@@ -353,6 +353,8 @@
 
 .floppy-image {
   max-width: 21px;
+  mix-blend-mode: difference;
+  color: var(--mix-blend-color);
 }
 
 @media (width <= 375px) {
@@ -431,6 +433,11 @@
   text-transform: uppercase;
   background: var(--page-background);
   cursor: pointer;
+}
+
+.form__botton {
+  display: flex;
+  justify-content: space-around;
 }
  
 /* Images-effect */
